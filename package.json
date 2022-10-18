@@ -1,0 +1,26 @@
+{
+  "name": "ci-cd-hw_27",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy-e2e-start": "cypress open --config-file=./cy-e2e/cypress.config.ts",
+    "cy-e2e-run": "cypress run --browser chrome --headed --config-file=./cy-e2e/cypress.config.ts",
+    "cy-e2e-reporter": "allure generate ./cy-e2e/cypress/assets/allure-results --clean -o ./cy-e2e/cypress/assets/allure-report && allure open ./src/cy-e2e/cypress/assets/allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efremova-Natasha/CI-CD-HW_27.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Efremova-Natasha/CI-CD-HW_27/issues"
+  },
+  "homepage": "https://github.com/Efremova-Natasha/CI-CD-HW_27#readme",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.33.0",
+    "cypress": "^10.10.0",
+    "ts-node": "^10.9.1"
+  }
+}
